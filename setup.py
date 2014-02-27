@@ -1,5 +1,3 @@
-"""Python package setup file using setuptools."""
-
 import os
 from setuptools import setup, find_packages
 
@@ -43,14 +41,14 @@ setup(
       '*.yaml'
     ]
   },
-  zip_safe=True,  # True if it is okay to zip up your package hierarchy for redistribution; False if, e.g. it writes temp/output files within this hierarchy, etc.
+  zip_safe=True,  # True if it is okay to zip up this package hierarchy for redistribution; False if, e.g. it writes temp/output files within this hierarchy, etc.
   install_requires=[
     'numpy',
     'pyzmq'
   ],
-  test_suite=(pkg_name + '.tests'),  # all test package names specified here when you run: python setup.py test
+  test_suite=(pkg_name + '.tests'),  # test package names specified here are executed when you run: python setup.py test
   platforms='any',
-  keywords='utilities tools',  # add useful keywords here; if put up on PyPI, this facilitates better search
+  keywords='server utilities tools',  # add useful keywords here; if put up on PyPI, this facilitates better search
   classifiers=[
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',

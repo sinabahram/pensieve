@@ -6,25 +6,21 @@ pensieve is an easy extensible server architecture to accept socket data such as
 Dependencies
 ------------
 
-List your project's dependencies here, e.g.:
-
 * [Python 2.7.x](http://www.python.org/)
-* [NumPy](http://www.numpy.org/) (lumos doesn't need SciPy, just NumPy, but it doesn't hurt)
+* [NumPy](http://www.numpy.org/) (pensieve doesn't need SciPy, just NumPy, but it doesn't hurt)
 * [OpenCV 2.4.x](http://opencv.org/)
 * [PyZMQ](http://zeromq.org/bindings:python) (optional, for streaming/pub-sub servers)
 
 Installation
 ------------
 
-List installation steps here to make it easier for people grab your project and start hacking.
-
 1. Clone:
     
     ```bash
-    $ git clone git@github.com:<your_username>/pensieve.git
+    $ git clone git@github.com:sinabahram/pensieve.git
     ```
 
-2. Install:
+2. Install (after `cd pensieve/`):
     
     ```bash
     $ [sudo] python setup.py develop
@@ -35,6 +31,14 @@ List installation steps here to make it easier for people grab your project and 
 Usage
 -----
 
-Give some usage examples, like how to run your project or use your package in code.
+Run server:
+```bash
+$ python -m pensieve.server
+```
 
-Note that this outermost `pensieve` directory is a container for your top-level Python package that lives in the inner `pensieve` directory. Any module under that, say `pensieve/bar.py` will be accessible as `import pensieve.bar` from this level and from anywhere on the system once installed (even in developer mode). The recommended way to run your scripts is from this outer level, e.g. `$ python -m pensieve.bar`.
+Run test client:
+```bash
+$ python -m pensieve.client
+```
+
+Note: You can connect to a running server instance from any pensieve client.
