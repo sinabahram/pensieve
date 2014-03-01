@@ -15,7 +15,7 @@ socket = context.socket(zmq.REQ)
 socket.connect(addr)
 
 print "About to send %s" % (message)
-socket.send(b"%s"%(message))
+socket.send(b"%s" % (message))
 
 reply = socket.recv()
 print("Received reply: %s" % (reply))
