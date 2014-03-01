@@ -7,6 +7,6 @@ class Handshake(HandlerInterface):
         print "Handshake got called"
         try:
             return checkValue(header, 'value', 'ping', ok('handshake', 'pong'))
-        except MessageError, e:
+        except MessageError as e:
             print "Got exception: ", e
             return e.json

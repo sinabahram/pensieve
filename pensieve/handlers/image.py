@@ -27,7 +27,7 @@ class Image(HandlerInterface):
             height = checkField(header, 'height')
             width = checkField(header, 'width')
             format = checkField(header, 'format')
-        except MessageError, e:
+        except MessageError as e:
             return e.json
 
         # is image in RGB format?
