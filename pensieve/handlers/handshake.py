@@ -1,8 +1,8 @@
-from handlers import HandlerInterface
+from handlers import BaseHandler
 from helpers import ok, checkValue, MessageError
 
 
-class Handshake(HandlerInterface):
+class Handshake(BaseHandler):
     def handle(self, header, data):
         try:
             return checkValue(header, 'value', 'ping', ok('handshake', 'pong'))

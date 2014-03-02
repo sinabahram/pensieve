@@ -3,10 +3,10 @@ import cv2.cv as cv
 import numpy as np
 from threading import Thread
 from helpers import ok, invalidValue, checkField, MessageError
-from handlers import HandlerInterface
+from handlers import BaseHandler
 
 
-class Image(HandlerInterface):
+class Image(BaseHandler):
     image = None
 
     def __init__(self):
