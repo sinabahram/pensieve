@@ -2,8 +2,9 @@ import cv2
 import cv2.cv as cv
 import numpy as np
 from threading import Thread
-from helpers import ok, invalidValue, checkField, MessageError
-from handlers.base_handler import BaseHandler
+
+from .base_handler import BaseHandler
+from ..helpers import ok, invalidValue, checkField, MessageError
 
 
 class Image(BaseHandler):

@@ -38,7 +38,7 @@ $ python -m pensieve.server
 
 Run test client:
 ```bash
-$ python -m pensieve.client
+$ python -m pensieve.tests.client
 ```
 
 Note: You can connect to a running server instance from any pensieve client.

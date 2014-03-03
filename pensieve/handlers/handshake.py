@@ -1,5 +1,5 @@
-from handlers.base_handler import BaseHandler
-from helpers import ok, checkValue, MessageError
+from .base_handler import BaseHandler
+from ..helpers import ok, checkValue, MessageError
 
 
 class Handshake(BaseHandler):

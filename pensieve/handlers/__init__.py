@@ -1,5 +1,5 @@
-from handshake import Handshake
-from image import Image
+from .handshake import Handshake
+from .image import Image
 
 
 messageHandlers = {
