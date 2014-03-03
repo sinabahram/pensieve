@@ -3,8 +3,9 @@
 import sys
 import json
 import zmq
-from handlers import messageHandlers
-from helpers import checkField, MessageError, typeNotSupported
+
+from .handlers import messageHandlers
+from .helpers import checkField, MessageError, typeNotSupported
 
 
 def dispatchMessage(header, data):
