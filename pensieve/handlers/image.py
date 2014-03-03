@@ -3,7 +3,7 @@ import cv2.cv as cv
 import numpy as np
 from threading import Thread
 from helpers import ok, invalidValue, checkField, MessageError
-from handlers import BaseHandler
+from handlers.base_handler import BaseHandler
 
 
 class Image(BaseHandler):

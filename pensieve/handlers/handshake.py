@@ -1,4 +1,4 @@
-from handlers import BaseHandler
+from handlers.base_handler import BaseHandler
 from helpers import ok, checkValue, MessageError
 
 
